@@ -34,6 +34,7 @@ const recipes = {
                 'Boil Pasta and serve'
             ],
             'Michael Izaguirre',
+            './food-pics/chicken-parmesan.jpg'
         ),
         new Recipe (
             'Chicken Cacciatore',
@@ -137,3 +138,6 @@ app.get('/api/recipes/fish', (request,response)=>{
 app.listen(process.env.PORT || PORT, ()=>{
     console.log(`Server Running on port ${PORT}`)
 })
+
+
+console.log(recipes.chx)
