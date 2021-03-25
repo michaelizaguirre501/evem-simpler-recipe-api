@@ -133,6 +133,6 @@ app.get('/api/recipes/fish', (request,response)=>{
     response.json(recipes.fish)
 })
 
-app.listen(PORT, ()=>{
+app.listen(porcess.env.PORT || PORT, ()=>{
     console.log(`Server Running on port ${PORT}`)
 })
